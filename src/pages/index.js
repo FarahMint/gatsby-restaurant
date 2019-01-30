@@ -1,16 +1,22 @@
 import React from 'react'
-// import { Link } from 'gatsby'
-import { FaBeer } from 'react-icons/fa'
 import Layout from '../components/layout'
-// import Image from '../components/image'
+
 import SEO from '../components/seo'
+import { HomeHeader, Banner, BannerButton } from '../utils'
+
+import QuickInfo from '../components/HomePageComponent/QuickInfo'
+import img from '../images/homeBcg.jpeg'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h3>
-      Hi Gatsby <FaBeer />
-    </h3>
+
+    <HomeHeader img={img}>
+      <Banner title="Delice" subtitle="main Street">
+        <BannerButton style={{ margin: '2rem auto' }}>menu</BannerButton>
+      </Banner>
+    </HomeHeader>
+    <QuickInfo />
   </Layout>
 )
 

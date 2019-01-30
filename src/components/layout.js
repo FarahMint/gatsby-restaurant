@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 // import { StaticQuery, graphql } from 'gatsby'
 
 import Navbar from './globals/navbar'
+import Footer from './globals/Footer'
 // import Header from './header'
 
 // import './layout.css'
@@ -15,6 +16,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Navbar />
       {children}
+      <Footer />
     </React.Fragment>
   )
 }
