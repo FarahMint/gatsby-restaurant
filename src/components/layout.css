@@ -8,10 +8,11 @@
   --mainOrange: #f15025;
   --mainWhite: rgb(255, 255, 255);
   --mainYellow: #d2aa5c;
+  --mainBlack: #262626;
 }
 
 body {
   font-family: 'Caveat', cursive;
-  color: var(--mainOrange);
+  color: var(--mainBlack);
   background-color: var(--mainWhite);
 }

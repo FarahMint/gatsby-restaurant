@@ -39,18 +39,15 @@ const ProductWrapper = styled.div`
 
   .name {
     color: ${styles.colors.mainYellow};
-    /* margin-top: 0.5rem; */
+    margin-left: 0.5rem;
   }
   .price {
     color: ${styles.colors.mainYellow};
-    /* margin-top: 0.5rem; */
   }
 
   .info {
-    /* color: ${styles.colors.mainYellow}; */
     margin-top: 0.5rem;
-    word-spacing: .2rem;
+    margin-left: 0.5rem;
+    word-spacing: 0.2rem;
   }
-
-
 `
