@@ -7,6 +7,7 @@ import { HomeHeader, Banner, BannerButton } from '../utils'
 import QuickInfo from '../components/HomePageComponent/QuickInfo'
 import img from '../images/homeBcg.jpeg'
 import Gallery from '../components/HomePageComponent/Gallery'
+import Menu from '../components/HomePageComponent/Menu'
 
 const IndexPage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const IndexPage = () => (
     </HomeHeader>
     <QuickInfo />
     <Gallery />
+    <Menu />
   </Layout>
 )
 
