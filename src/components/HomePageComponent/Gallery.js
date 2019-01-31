@@ -10,6 +10,7 @@ const GET_IMAGES = graphql`
       edges {
         node {
           id
+          name
           childImageSharp {
             fluid(maxWidth: 500) {
               ...GatsbyImageSharpFluid_tracedSVG
@@ -34,11 +35,15 @@ export default function Gallery() {
         return (
           <Section>
             <GalleryWrapper>
-              {images.map(({ node, id }, index) => {
+              {images.map(({ node, id, name }, index) => {
                 return (
                   <div key={node.id} className={`item item-${index + 1}`}>
-                    <Img fluid={node.childImageSharp.fluid} />
-                    <p className="info">Awesome pizza</p>
+                    <Img
+                      fluid={node.childImageSharp.fluid}
+                      alt={node.name}
+                      title={node.name}
+                    />
+                    <p className="info">{node.name}</p>
                   </div>
                 )
               })}

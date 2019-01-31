@@ -8,6 +8,7 @@ import QuickInfo from '../components/HomePageComponent/QuickInfo'
 import img from '../images/homeBcg.jpeg'
 import Gallery from '../components/HomePageComponent/Gallery'
 import Menu from '../components/HomePageComponent/Menu'
+import { Link } from 'gatsby'
 
 const IndexPage = () => (
   <Layout>
@@ -15,7 +16,14 @@ const IndexPage = () => (
 
     <HomeHeader img={img}>
       <Banner title="Delice" subtitle="main Street">
-        <BannerButton style={{ margin: '2rem auto' }}>menu</BannerButton>
+        <Link
+          to="/menu"
+          style={{
+            textDecoration: `none`,
+          }}
+        >
+          <BannerButton style={{ margin: '2rem auto' }}>menu</BannerButton>
+        </Link>
       </Banner>
     </HomeHeader>
     <QuickInfo />

@@ -9,7 +9,7 @@ export default function Product({ product }) {
   const { fixed } = product.images
   return (
     <ProductWrapper>
-      <Img fixed={fixed} className="img" />
+      <Img fixed={fixed} className="img" alt={name} title={name} />
       <div className="text">
         <div className="product-content">
           <h3 className="name">{name}</h3>
@@ -33,7 +33,7 @@ const ProductWrapper = styled.div`
   .product-content {
     display: flex;
     justify-content: space-between;
-    font-size: 1.25rem;
+    font-size: 1.05rem;
     text-transform: uppercase;
   }
 
@@ -42,12 +42,13 @@ const ProductWrapper = styled.div`
     margin-left: 0.5rem;
   }
   .price {
-    color: ${styles.colors.mainYellow};
+    color: ${styles.colors.mainGrey};
   }
 
   .info {
     margin-top: 0.5rem;
     margin-left: 0.5rem;
     word-spacing: 0.2rem;
+    color: ${styles.colors.mainBlack};
   }
 `

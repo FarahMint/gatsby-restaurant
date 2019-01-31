@@ -16,6 +16,7 @@ const BannerWrapper = styled.div`
   margin-bottom: 3rem;
   color: ${styles.colors.mainWhite};
   text-align: center;
+
   .title {
     font-size: 3rem;
     text-transform: uppercase;
