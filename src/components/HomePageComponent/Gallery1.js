@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { StaticQuery, graphql } from 'gatsby'
 import { styles, Section } from '../../utils'
-import Img from 'gatsby-image'
+import Img from 'gatsbsy-image'
 
 const SINGLE_IMG = graphql`
   {
